@@ -1,4 +1,6 @@
 # Portfolio
-## My Personal Portfolio to showcase my development projects.
+## Personal Portfolio to showcase my projects.
 
-https://rodrigogollo.github.io/portfolio/
+<!-- https://rodrigogollo.github.io/portfolio/ -->
+
+# :warning: :construction: Refactor under construciton. 
