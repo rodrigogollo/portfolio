@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "deploy": "NODE_ENV=production next build && cp .nojekyll out/ && gh-pages -d out"
+    "deploy": "npm run build && touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free-brands": "^5.0.13",

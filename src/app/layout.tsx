@@ -16,17 +16,31 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const metadata: Metadata = {
   title: "Rodrigo Gollo",
   description: "",
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: `${BASE_PATH}/favicon.ico` },
+      {
+        url: `${BASE_PATH}/favicon-32x32.png`,
+        sizes: "32x32",
+        type: "image/png",
+      },
+      {
+        url: `${BASE_PATH}/favicon-16x16.png`,
+        sizes: "16x16",
+        type: "image/png",
+      },
     ],
-    apple: { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
-    shortcut: "/favicon.ico",
+    apple: {
+      url: `${BASE_PATH}/apple-touch-icon.png`,
+      sizes: "180x180",
+      type: "image/png",
+    },
+    shortcut: `${BASE_PATH}/favicon.ico`,
   },
 };
 

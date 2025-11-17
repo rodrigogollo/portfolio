@@ -4,6 +4,8 @@ import Header from "@/components/header/header";
 import Image from "next/image";
 import { useLanguage } from "@/components/language-provider";
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const aboutCopy = {
   en: {
     header: {
@@ -69,10 +71,11 @@ export default function About() {
 
         <Image
           className="mx-auto border-0 rounded-2xl"
-          src="/images/london.jpg"
+          src={`${BASE_PATH}/images/london.jpg`}
           width={400}
           height={400}
           alt={copy.imageAlt}
+          unoptimized={true}
         />
       </div>
     </section>
