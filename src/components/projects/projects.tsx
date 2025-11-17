@@ -10,7 +10,26 @@ import {
 } from "@/components/ui/accordion";
 import { useLanguage } from "@/components/language-provider";
 
-const projectCopy = {
+interface BaseProject {
+  id: string;
+  title: string;
+  description: string;
+  stack: readonly string[];
+  href: string;
+}
+
+interface LanguageCopy {
+  header: {
+    title: string;
+    desc: string;
+  };
+  linkLabel: string;
+  projects: BaseProject[];
+}
+
+type ProjectEntry = BaseProject;
+
+const projectCopy: Record<string, LanguageCopy> = {
   en: {
     header: {
       title: "Projects",
@@ -93,9 +112,7 @@ const projectCopy = {
       },
     ],
   },
-} as const;
-
-type ProjectEntry = (typeof projectCopy)["en"]["projects"][number];
+};
 
 export default function Projects() {
   const { language } = useLanguage();
