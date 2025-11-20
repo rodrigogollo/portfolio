@@ -53,14 +53,14 @@ const projectCopy: Record<string, LanguageCopy> = {
         stack: ["Golang", "Twitch API", "FFmpeg"],
         href: "https://github.com/rodrigogollo/go-twitch-clips-to-video",
       },
-      {
-        id: "velvet-cake-jar",
-        title: "Velvet Cake Jar",
-        description:
-          "Single-page marketing site based on a lightweight HTML5 template to help a bakery validate demand quickly.",
-        stack: ["HTML5", "CSS", "JavaScript"],
-        href: "https://github.com/rodrigogollo/velvet-cake-jar",
-      },
+      // {
+      //   id: "velvet-cake-jar",
+      //   title: "Velvet Cake Jar",
+      //   description:
+      //     "Single-page marketing site based on a lightweight HTML5 template to help a bakery validate demand quickly.",
+      //   stack: ["HTML5", "CSS", "JavaScript"],
+      //   href: "https://github.com/rodrigogollo/velvet-cake-jar",
+      // },
       {
         id: "portfolio",
         title: "Portfolio (This Site)",
