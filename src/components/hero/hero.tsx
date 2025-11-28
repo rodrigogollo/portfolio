@@ -60,16 +60,16 @@ export default function Hero() {
     >
       <DottedGlowBackground
         className="pointer-events-none"
-        opacity={0.4}
         gap={30}
         radius={1.2}
-        colorLightVar="--color-neutral-400"
-        glowColorLightVar="--color-neutral-500"
-        colorDarkVar="--color-neutral-600"
-        glowColorDarkVar="--color-blue-500"
+        color="#737373"
+        darkColor="#a3a3a3"
+        glowColor="#404040"
+        darkGlowColor="#d4d4d4"
+        opacity={0.3}
         backgroundOpacity={0}
-        speedMin={0.15}
-        speedMax={0.8}
+        speedMin={0.1}
+        speedMax={0.6}
         speedScale={1}
       />
 
